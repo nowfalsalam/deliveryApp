@@ -1,10 +1,10 @@
 # deliveryApp
 
 # Requirements
-1. Xcode 11.2.1 :
-2. iOS 13.2 :
-3. Swift 5 :
-4. SwiftUI :
+1. Xcode 11.2.1 
+2. iOS 13.2 
+3. Swift 5 
+4. SwiftUI
 5. Swift package manager
 
 # Features
