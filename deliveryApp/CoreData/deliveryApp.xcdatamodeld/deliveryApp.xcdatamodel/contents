@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15508" systemVersion="18G95" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CDelivery" representedClassName="CDelivery" syncable="YES">
+        <attribute name="descrptn" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String"/>
+        <relationship name="location" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CLocation" inverseName="delivery" inverseEntity="CLocation"/>
+    </entity>
+    <entity name="CLocation" representedClassName="CLocation" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String"/>
+        <attribute name="lat" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="long" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="delivery" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDelivery" inverseName="location" inverseEntity="CDelivery"/>
+    </entity>
+    <elements>
+        <element name="CDelivery" positionX="-353.08984375" positionY="30.484375" width="128" height="103"/>
+        <element name="CLocation" positionX="-54" positionY="18" width="128" height="103"/>
+    </elements>
+</model>

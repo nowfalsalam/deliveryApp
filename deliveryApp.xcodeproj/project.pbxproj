@@ -3,13 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		937699CC2396EBD200D48204 /* ServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937699CB2396EBD200D48204 /* ServiceProtocol.swift */; };
+		937699CE2396ED7400D48204 /* FetchDeliveryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937699CD2396ED7400D48204 /* FetchDeliveryService.swift */; };
+		937699D12396F06500D48204 /* DeliveryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937699D02396F06500D48204 /* DeliveryListViewModel.swift */; };
+		937699D4239731F700D48204 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937699D3239731F700D48204 /* CoreDataStack.swift */; };
+		937699D72397327E00D48204 /* deliveryApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 937699D52397327E00D48204 /* deliveryApp.xcdatamodeld */; };
+		937699DC239733D700D48204 /* CDelivery+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937699D8239733D700D48204 /* CDelivery+CoreDataClass.swift */; };
+		937699DD239733D700D48204 /* CDelivery+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937699D9239733D700D48204 /* CDelivery+CoreDataProperties.swift */; };
+		937699DE239733D700D48204 /* CLocation+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937699DA239733D700D48204 /* CLocation+CoreDataClass.swift */; };
+		937699DF239733D700D48204 /* CLocation+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937699DB239733D700D48204 /* CLocation+CoreDataProperties.swift */; };
+		937699E32397598500D48204 /* DeliveryDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937699E22397598500D48204 /* DeliveryDetail.swift */; };
+		937699E52397633600D48204 /* DeliveryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937699E42397633600D48204 /* DeliveryModel.swift */; };
+		9397418F239668CA0043F441 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9397418E239668CA0043F441 /* SDWebImageSwiftUI */; };
 		93EB256D2395B8B2007BF17C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EB256C2395B8B2007BF17C /* AppDelegate.swift */; };
 		93EB256F2395B8B2007BF17C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EB256E2395B8B2007BF17C /* SceneDelegate.swift */; };
-		93EB25712395B8B2007BF17C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EB25702395B8B2007BF17C /* ContentView.swift */; };
+		93EB25712395B8B2007BF17C /* DeliveryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EB25702395B8B2007BF17C /* DeliveryListView.swift */; };
 		93EB25732395B8B4007BF17C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93EB25722395B8B4007BF17C /* Assets.xcassets */; };
 		93EB25762395B8B4007BF17C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93EB25752395B8B4007BF17C /* Preview Assets.xcassets */; };
 		93EB25792395B8B4007BF17C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93EB25772395B8B4007BF17C /* LaunchScreen.storyboard */; };
@@ -35,10 +47,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		937699CB2396EBD200D48204 /* ServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProtocol.swift; sourceTree = "<group>"; };
+		937699CD2396ED7400D48204 /* FetchDeliveryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchDeliveryService.swift; sourceTree = "<group>"; };
+		937699D02396F06500D48204 /* DeliveryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryListViewModel.swift; sourceTree = "<group>"; };
+		937699D3239731F700D48204 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		937699D62397327E00D48204 /* deliveryApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = deliveryApp.xcdatamodel; sourceTree = "<group>"; };
+		937699D8239733D700D48204 /* CDelivery+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDelivery+CoreDataClass.swift"; sourceTree = "<group>"; };
+		937699D9239733D700D48204 /* CDelivery+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDelivery+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		937699DA239733D700D48204 /* CLocation+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLocation+CoreDataClass.swift"; sourceTree = "<group>"; };
+		937699DB239733D700D48204 /* CLocation+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLocation+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		937699E22397598500D48204 /* DeliveryDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryDetail.swift; sourceTree = "<group>"; };
+		937699E42397633600D48204 /* DeliveryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryModel.swift; sourceTree = "<group>"; };
 		93EB25692395B8B2007BF17C /* deliveryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = deliveryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93EB256C2395B8B2007BF17C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93EB256E2395B8B2007BF17C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		93EB25702395B8B2007BF17C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		93EB25702395B8B2007BF17C /* DeliveryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryListView.swift; sourceTree = "<group>"; };
 		93EB25722395B8B4007BF17C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93EB25752395B8B4007BF17C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		93EB25782395B8B4007BF17C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9397418F239668CA0043F441 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +100,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		937699C72396E97900D48204 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				937699E42397633600D48204 /* DeliveryModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		937699CA2396EB7300D48204 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				937699CB2396EBD200D48204 /* ServiceProtocol.swift */,
+				937699CD2396ED7400D48204 /* FetchDeliveryService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		937699CF2396F04700D48204 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				937699D02396F06500D48204 /* DeliveryListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		937699D2239731E100D48204 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				937699D8239733D700D48204 /* CDelivery+CoreDataClass.swift */,
+				937699D9239733D700D48204 /* CDelivery+CoreDataProperties.swift */,
+				937699DA239733D700D48204 /* CLocation+CoreDataClass.swift */,
+				937699DB239733D700D48204 /* CLocation+CoreDataProperties.swift */,
+				937699D3239731F700D48204 /* CoreDataStack.swift */,
+				937699D52397327E00D48204 /* deliveryApp.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		937699E1239757F000D48204 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				93EB25702395B8B2007BF17C /* DeliveryListView.swift */,
+				937699E22397598500D48204 /* DeliveryDetail.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		93EB25602395B8B2007BF17C = {
 			isa = PBXGroup;
 			children = (
@@ -99,9 +170,13 @@
 		93EB256B2395B8B2007BF17C /* deliveryApp */ = {
 			isa = PBXGroup;
 			children = (
+				937699E1239757F000D48204 /* View */,
+				937699D2239731E100D48204 /* CoreData */,
+				937699CF2396F04700D48204 /* ViewModel */,
+				937699CA2396EB7300D48204 /* Service */,
+				937699C72396E97900D48204 /* Model */,
 				93EB256C2395B8B2007BF17C /* AppDelegate.swift */,
 				93EB256E2395B8B2007BF17C /* SceneDelegate.swift */,
-				93EB25702395B8B2007BF17C /* ContentView.swift */,
 				93EB25722395B8B4007BF17C /* Assets.xcassets */,
 				93EB25772395B8B4007BF17C /* LaunchScreen.storyboard */,
 				93EB257A2395B8B4007BF17C /* Info.plist */,
@@ -152,6 +227,9 @@
 			dependencies = (
 			);
 			name = deliveryApp;
+			packageProductDependencies = (
+				9397418E239668CA0043F441 /* SDWebImageSwiftUI */,
+			);
 			productName = deliveryApp;
 			productReference = 93EB25692395B8B2007BF17C /* deliveryApp.app */;
 			productType = "com.apple.product-type.application";
@@ -224,6 +302,9 @@
 				Base,
 			);
 			mainGroup = 93EB25602395B8B2007BF17C;
+			packageReferences = (
+				9397418D239668CA0043F441 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 93EB256A2395B8B2007BF17C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -267,9 +348,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				937699DF239733D700D48204 /* CLocation+CoreDataProperties.swift in Sources */,
+				937699DC239733D700D48204 /* CDelivery+CoreDataClass.swift in Sources */,
+				937699D72397327E00D48204 /* deliveryApp.xcdatamodeld in Sources */,
+				937699DD239733D700D48204 /* CDelivery+CoreDataProperties.swift in Sources */,
 				93EB256D2395B8B2007BF17C /* AppDelegate.swift in Sources */,
+				937699D12396F06500D48204 /* DeliveryListViewModel.swift in Sources */,
+				937699D4239731F700D48204 /* CoreDataStack.swift in Sources */,
+				937699CE2396ED7400D48204 /* FetchDeliveryService.swift in Sources */,
+				937699DE239733D700D48204 /* CLocation+CoreDataClass.swift in Sources */,
 				93EB256F2395B8B2007BF17C /* SceneDelegate.swift in Sources */,
-				93EB25712395B8B2007BF17C /* ContentView.swift in Sources */,
+				937699CC2396EBD200D48204 /* ServiceProtocol.swift in Sources */,
+				937699E32397598500D48204 /* DeliveryDetail.swift in Sources */,
+				93EB25712395B8B2007BF17C /* DeliveryListView.swift in Sources */,
+				937699E52397633600D48204 /* DeliveryModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,6 +680,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9397418D239668CA0043F441 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9397418E239668CA0043F441 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9397418D239668CA0043F441 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		937699D52397327E00D48204 /* deliveryApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				937699D62397327E00D48204 /* deliveryApp.xcdatamodel */,
+			);
+			currentVersion = 937699D62397327E00D48204 /* deliveryApp.xcdatamodel */;
+			path = deliveryApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 93EB25612395B8B2007BF17C /* Project object */;
 }
